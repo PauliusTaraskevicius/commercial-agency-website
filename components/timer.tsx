@@ -13,10 +13,17 @@ export const Timer = () => {
     return () => clearInterval(timer);
   }, []);
 
-
   if (!isMounted) {
     return null;
   }
 
-  return <div>{time.toLocaleTimeString("lt-LT")}</div>;
+  return (
+    <div className="hidden lg:block py-1 px-2 uppercase text-[10.5px] font-bold">
+      {time.toLocaleTimeString("en-US", {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+      }).replace(/AM|PM/,'')}
+    </div>
+  );
 };
