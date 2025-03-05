@@ -18,7 +18,7 @@ export const Timer = () => {
   }
 
   return (
-    <div className="hidden lg:block py-1 px-2 uppercase text-[10.5px] font-bold">
+    <div className="hidden lg:block py-1 uppercase text-[12.5px] font-bold ">
       {time.toLocaleTimeString("en-US", {
         hour: "2-digit",
         minute: "2-digit",
