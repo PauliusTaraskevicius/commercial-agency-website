@@ -1,6 +1,6 @@
 const LayoutWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="fixed top-0 left-0 z-[0] w-full h-full">
+    <div className="md:max-w-[1400px] flex flex-col h-full">
       {children}
     </div>
   );

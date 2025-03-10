@@ -9,7 +9,7 @@ const Header = () => {
         <div className="md:col-span-2 col-span-3">
           <Link
             href="/work"
-            className="hover:text-muted-foreground whitespace-nowrap uppercase tracking-[0.02em]  font-bold"
+            className="hover:text-muted-foreground whitespace-nowrap uppercase tracking-[0.02em]  font-bold transition"
           >
             Work
           </Link>
@@ -17,7 +17,7 @@ const Header = () => {
         <div className="md:col-span-2 col-span-3">
           <Link
             href="/about"
-            className="hover:text-muted-foreground whitespace-nowrap uppercase tracking-[0.02em] font-bold"
+            className="hover:text-muted-foreground whitespace-nowrap uppercase tracking-[0.02em] font-bold transition"
           >
             About
           </Link>
@@ -25,39 +25,18 @@ const Header = () => {
         <div className="md:col-span-2 max-md:col-span-2 max-md:flex max-md:justify-end">
           <Link
             href="/lets-talk"
-            className="hover:text-muted-foreground whitespace-nowrap uppercase tracking-[0.02em] font-bold"
+            className="hover:text-muted-foreground whitespace-nowrap uppercase tracking-[0.02em] font-bold transition"
           >
             Let&apos;s talk
           </Link>
         </div>
-        <div className="text-right max-md:hidden md:col-span-2 md:col-start-11 | js-display-time">
+        <div className="text-right max-md:hidden md:col-span-2 md:col-start-11">
           <span className="w-[45px] inline-block text-left whitespace-nowrap">
             <Timer />
           </span>
         </div>
       </div>
     </header>
-    // <header className="fixed top-0 right-0 lg:left-0 transform lg:translate-x-1/6 flex justify-start pt-[30px] px-2 bg-transparent">
-    //   <div className="flex justify-between">
-    //     <ul className="flex justify-end gap-14 md:justify-center items-center lg:gap-72 uppercase text-[12.5px] font-bold ">
-    //       <Link href="/work" className="hover:text-muted-foreground transition">
-    //         <li>Work</li>
-    //       </Link>
-    //       <Link
-    //         href="/about"
-    //         className="hover:text-muted-foreground transition"
-    //       >
-    //         <li>About</li>
-    //       </Link>
-    //       <Link
-    //         href="/lets-talk"
-    //         className="hover:text-muted-foreground transition"
-    //       >
-    //         <li>Let&apos;s talk</li>
-    //       </Link>
-    //     </ul>
-    //   </div>
-    // </header>
   );
 };
 
