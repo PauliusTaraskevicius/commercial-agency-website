@@ -3,13 +3,13 @@ import { Timer } from "./timer";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 w-full py-1 px-2 z-[2]">
+    <header className="fixed top-0 left-0 w-full py-1 px-2 z-[99999]">
       <div className="grid grid-cols-12 gap-x-1 md:gap-x-2">
         <div className="col-span-4 md:col-span-2 pt-1" />
         <div className="md:col-span-2 col-span-3">
           <Link
             href="/work"
-            className="hover:text-muted-foreground whitespace-nowrap uppercase tracking-[0.02em]  font-bold transition"
+            className="hover:text-background/50 whitespace-nowrap uppercase tracking-[0.02em]  font-bold transition text-background"
           >
             Work
           </Link>
@@ -17,7 +17,7 @@ const Header = () => {
         <div className="md:col-span-2 col-span-3">
           <Link
             href="/about"
-            className="hover:text-muted-foreground whitespace-nowrap uppercase tracking-[0.02em] font-bold transition"
+            className="hover:text-background/50 whitespace-nowrap uppercase tracking-[0.02em] font-bold transition text-background"
           >
             About
           </Link>
@@ -25,7 +25,7 @@ const Header = () => {
         <div className="md:col-span-2 max-md:col-span-2 max-md:flex max-md:justify-end">
           <Link
             href="/lets-talk"
-            className="hover:text-muted-foreground whitespace-nowrap uppercase tracking-[0.02em] font-bold transition"
+            className="hover:text-background/50 whitespace-nowrap uppercase tracking-[0.02em] font-bold transition text-background"
           >
             Let&apos;s talk
           </Link>

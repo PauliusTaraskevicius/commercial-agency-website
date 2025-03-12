@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 
+
 const kannit = Kanit({
   subsets: ["latin", "latin-ext"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -26,6 +27,7 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <main className="h-[100dvh] flex flex-col pt-[30px]">
+      
           <Header />
           {children}
           <Footer />
