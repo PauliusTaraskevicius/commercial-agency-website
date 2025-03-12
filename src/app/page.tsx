@@ -9,14 +9,19 @@ export default function Home() {
       </div>
 
       <div className="col-span-8 flex flex-col justify-evenly md:col-span-2">
-        <div className="flex flex-col justify-center space-y-[6rem] *:uppercase">
-          {DUMMY_DATA.map((item) => (
-            <div key={item.title} className="uppercase h-9">
-              <h2 className="cursor-pointer hover:opacity-50">{item.title}</h2>
-              <span className="cursor-pointer hover:opacity-50">[ {item.about} ]</span>
+        {DUMMY_DATA.map((item) => (
+          <div
+            key={item.title}
+            className="flex flex-col justify-center  *:uppercase"
+          >
+            <div className="uppercase h-9 ">
+              <h2 className="cursor-pointer hover:opacity-50 whitespace-nowrap">{item.title}</h2>
+              <span className="cursor-pointer hover:opacity-50 whitespace-nowrap">
+                [ {item.about} ]
+              </span>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
 
       <div className="max-md:hidden relative -z-[10] col-span-4 col-start-9 font-exposure text-[32px] leading-[1.125] tracking-wide flex items-center max-w-[430px]">
