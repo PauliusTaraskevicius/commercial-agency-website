@@ -10,12 +10,7 @@ const LandingVideo = ({ src }: LandingVideoProps) => {
       loop={true}
       muted
     >
-      <source
-        className="max-sm:hidden"
-        type="video/mp4"
-        // src="/videos/hills.mp4"
-        src={src}
-      />
+      <source className="max-sm:hidden" type="video/mp4" src={src} />
     </video>
   );
 };
