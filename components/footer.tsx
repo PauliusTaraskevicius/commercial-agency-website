@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="md:col-span-2 max-md:hidden">
             <Link
               href="https://moxey.no/lets-talk/"
-              className="whitespace-nowrap uppercase tracking-[0.02em] default-text-hover hover:text-background/50 text-background"
+              className="whitespace-nowrap uppercase tracking-[0.02em] default-text-hover hover:text-background/50 text-background font-bold "
               target=""
             >
               {" "}
@@ -21,7 +21,7 @@ const Footer = () => {
             {" "}
             <Link
               href="mailto:hello@moxey.no"
-              className="whitespace-nowrap uppercase tracking-[0.02em] default-text-hover hover:text-background/50 text-background"
+              className="whitespace-nowrap uppercase tracking-[0.02em] default-text-hover hover:text-background/50 text-background font-bold"
               target=""
             >
               {" "}
@@ -32,7 +32,7 @@ const Footer = () => {
             {" "}
             <Link
               href="tel:+47%20916%2099%20927"
-              className="whitespace-nowrap uppercase tracking-[0.02em] default-text-hover hover:text-background/50 text-background"
+              className="whitespace-nowrap uppercase tracking-[0.02em] default-text-hover hover:text-background/50 text-background font-bold"
               target=""
             >
               {" "}

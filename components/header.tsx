@@ -3,7 +3,7 @@ import { Timer } from "./timer";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 w-full py-1 px-2 z-[99999]">
+    <nav className="fixed top-0 left-0 w-full py-1 px-2 z-[99999]">
       <div className="grid grid-cols-12 gap-x-1 md:gap-x-2">
         <div className="col-span-4 md:col-span-2 pt-1" />
         <div className="md:col-span-2 col-span-3">
@@ -36,7 +36,7 @@ const Header = () => {
           </span>
         </div>
       </div>
-    </header>
+    </nav>
   );
 };
 

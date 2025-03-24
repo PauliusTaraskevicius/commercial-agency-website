@@ -1,17 +1,16 @@
 interface LandingVideoProps {
-  src: string;
+  src: string | undefined
 }
 
 const LandingVideo = ({ src }: LandingVideoProps) => {
   return (
     <video
       className="fixed right-0 top-0 max-w-[inherit] object-cover w-full h-full -z-10"
-      autoPlay={true}
+      autoPlay={false}
       loop={true}
       muted
-    >
-      <source className="max-sm:hidden" type="video/mp4" src={src} />
-    </video>
+      src={src}
+    />
   );
 };
 
